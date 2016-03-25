@@ -1,0 +1,2 @@
+#!/bin/bash
+pdftotext HistoryReport.pdf -enc UTF-8 - | tr -d ' \n' | wc -m
