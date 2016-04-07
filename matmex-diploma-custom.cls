@@ -122,7 +122,7 @@
     \chead{САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ \\ МАТЕМАТИКО-МЕХАНИЧЕСКИЙ ФАКУЛЬТЕТ
       \\ \my@title@chair@ru}
     %% В нижнем колонтитуле город и год
-    \cfoot{\large\parbox[b]{\textwidth}{\centering Санкт-Петербург -- 2015}}
+    \cfoot{\large\parbox[b]{\textwidth}{\centering Санкт-Петербург -- \the\year}}
 }
 
 \title{\my@title@title@ru}
