@@ -119,7 +119,8 @@
     \fancyhf{}  % clear all header and footer fields
     \renewcommand{\headrulewidth}{0pt}  % remove head ruler
     %% В верхнем колонтитуле будет университет и кафедра
-    \chead{САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ \\ МАТЕМАТИКО-МЕХАНИЧЕСКИЙ ФАКУЛЬТЕТ
+    \chead{
+    \normalsize{ САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ \\ МАТЕМАТИКО-МЕХАНИЧЕСКИЙ ФАКУЛЬТЕТ}
       \\ \my@title@chair@ru}
     %% В нижнем колонтитуле город и год
     \cfoot{\large\parbox[b]{\textwidth}{\centering Санкт-Петербург -- \the\year}}
@@ -130,7 +131,7 @@
 \thispagestyle{titleru}
 \begin{center}
     \vspace*{0.05\textheight}
-    {\Large РЕФЕРАТ ПО ИСТОРИИ ИНФОРМАТИКИ} \\
+    {\normalsize РЕФЕРАТ ПО ИСТОРИИ ИНФОРМАТИКИ} \\
     на тему: \@title
 \end{center}
 
