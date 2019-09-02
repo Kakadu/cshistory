@@ -1,7 +1,8 @@
-
+XELATEX=xelatex -interaction=batchmode -jobname=MLhistory -shell-escape
 all:
-	xelatex -interaction=batchmode -jobname=main -shell-escape main.tex
+	$(XELATEX) main.tex
+	$(XELATEX) main.tex
 
 clean:
-	rm -fr *.pdf *.out *.aux *.log *.toc
+	$(RM) -r *.pdf *.out *.aux *.log *.toc
 
