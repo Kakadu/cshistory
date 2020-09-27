@@ -6,6 +6,7 @@
 \LoadClass[a4paper,\my@fontsize]{\my@baseclass}
 
 \usepackage{fancyhdr}
+\usepackage{framed}
 \usepackage{ifthen}
 %% Мы используем компилятор XeLaTex, который дружит с Unicode и True Type/Open Type
 %% шрифтами. Для русификации достаточно подключить пакет fontspec и
@@ -119,7 +120,8 @@
     \fancyhf{}  % clear all header and footer fields
     \renewcommand{\headrulewidth}{0pt}  % remove head ruler
     %% В верхнем колонтитуле будет университет и кафедра
-    \chead{САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ \\ МАТЕМАТИКО-МЕХАНИЧЕСКИЙ ФАКУЛЬТЕТ
+    \chead{
+    \normalsize{ САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ \\ МАТЕМАТИКО-МЕХАНИЧЕСКИЙ ФАКУЛЬТЕТ}
       \\ \my@title@chair@ru}
     %% В нижнем колонтитуле город и год
     \cfoot{\large\parbox[b]{\textwidth}{\centering Санкт-Петербург -- \the\year}}
@@ -130,7 +132,7 @@
 \thispagestyle{titleru}
 \begin{center}
     \vspace*{0.05\textheight}
-    {\Large РЕФЕРАТ ПО ИСТОРИИ ИНФОРМАТИКИ} \\
+    {\normalsize РЕФЕРАТ ПО ИСТОРИИ ИНФОРМАТИКИ} \\
     на тему: \@title
 \end{center}
 
@@ -142,12 +144,33 @@
     Оценка:\hrule
     \vspace*{0.03\textheight}
 
-    Краткая рецензия:
-
-    \begin{tikzpicture}
-    \draw (0,-11) -- (17.1,-11) -- (17.1,4) -- (0,4) -- (0,-11);
-    \end{tikzpicture}
-
+    Краткая рецензия:  
+  \begin{framed}
+    \setlength{\topsep}{100pt}
+    Основные языки семейства ML: Standart ML и OCaml.   В реферате был 
+    рассмотрен контекст и цели, для которых эти языки создавались,  указаны родственные связи этих языков с современными императивными языками программирования. Во второй половине ХХго века велись исследования  функциональных языков программирования: языков, в которых абстракция достигается с помощью использования функций.  Автор остановился на основных работах, посвященных развитию языков функционального программирования.
+    Цели исследования выполнены.
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ $\quad$\\
+ 
+  \end{framed}    
+  
     \vspace*{0.03\textheight}
     Научный руководитель диссертационной работы: 
     \my@title@supervisorPosition@ru\ \my@title@supervisor@ru
